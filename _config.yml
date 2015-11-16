@@ -1,0 +1,20 @@
+# Site settings
+title: Spluxr
+
+description: The tool for doing the things
+  
+# the subpath of your site, e.g. /blog/
+baseurl: "" 
+
+# the base hostname & protocol for your site
+url: "http://jekyll-scroll.surge.sh/"
+
+# Build settings
+markdown: kramdown
+
+collections:
+- sections
+
+defaultColour: "#123456"
+
+heroImage: "hero-image.jpg"

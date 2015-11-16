@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    <div class="layout-page" style="background-color:{{ site.defaultColour }}">
+      {% include header.html %}
+  
+      <div id="main">
+        {{ content }}
+      </div>
+  
+    </div>
+
+  </body>
+
+</html>

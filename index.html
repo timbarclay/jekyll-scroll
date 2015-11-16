@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<div class="title-section overlay" style="background-image: url({{ site.baseurl }}/images/{{ site.heroImage }})">
+  <div class="container">
+    <h1 class="section-title">{{ site.title }}</h1>
+    <p class="section-subtitle">{{ site.description }}</p>
+  </div>
+</div>
+
+{% for section in site.sections %}
+  <div id="{{ section.id }}" class="section {{% if section.backgroundImage != null %}}overlay{{% endif %}}"
+    style="background-image: url({{ site.baseurl }}/{{ section.backgroundImage }})">
+    <div class="container">
+      <h2 class="section-title">{{ section.headline }}</h2>
+      <p class="section-subtitle">{{ section.detail }}</p>
+    </div>
+  </div>
+{% endfor %}
