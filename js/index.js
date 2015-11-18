@@ -1,8 +1,21 @@
 $(document).ready(function() {
+  scrollToPath();
   normaliseHash();
 	setupJumpScroll();
 	updateOnScroll();
 });
+
+function scrollToPath(){
+  // get the path without the /
+  var path = location.pathname.substr(1);
+  
+  if(!path) return;
+  
+  var element = $("#" + path);
+  if (element.length > 0) {
+    $(document).scrollTop(element.offset().top);
+  }
+}
 
 function normaliseHash(){
   if(!location.hash) return;

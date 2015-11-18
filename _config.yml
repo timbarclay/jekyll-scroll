@@ -7,7 +7,7 @@ description: The tool for doing the things
 baseurl: "" 
 
 # the base hostname & protocol for your site
-url: "http://jekyll-scroll.surge.sh/"
+url: "http://jekyll-scroll.surge.sh"
 
 # Build settings
 markdown: kramdown
@@ -15,6 +15,6 @@ markdown: kramdown
 collections:
 - sections
 
-defaultColour: "#123456"
+defaultColour: "#ffffff"
 
 heroImage: "hero-image.jpg"
